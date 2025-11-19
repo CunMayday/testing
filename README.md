@@ -18,3 +18,7 @@ View your app in AI Studio: https://ai.studio/apps/drive/1B8vQMbciVy9WxOval7QkOz
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deployment
+
+Every push to `main` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) which builds the Vite site and publishes it to GitHub Pages. In the repository’s **Settings → Pages**, set **Build and deployment** to **GitHub Actions** once, then each change merged to `main` will automatically redeploy the live site.
